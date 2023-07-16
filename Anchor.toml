@@ -1,0 +1,17 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+create_nft_program = "BNwSeAGYLkwvc6D2axc9FLxqvH5DxWCWq4sLb8JKbyqT"
+[programs.devnet]
+create_nft_program = "BNwSeAGYLkwvc6D2axc9FLxqvH5DxWCWq4sLb8JKbyqT"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/helsin828/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
